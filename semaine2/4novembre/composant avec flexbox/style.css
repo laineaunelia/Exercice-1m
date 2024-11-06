@@ -1,0 +1,76 @@
+/*everyone*/
+* {
+    color: #423E37;
+}
+
+/*navbar en entier*/
+.entete {
+    background-color: #E3B23C;
+}
+
+/*liste navbar*/
+.entete ol {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+}
+
+/*pour modifier l'espace des liens*/
+.entete li {
+    margin: 0 15px; 
+}
+
+/*là c'est l'espace on lui dit de prendre toute la place*/
+.espace {
+    flex-grow: 1; 
+}
+
+/* taille icone */
+.icone img {
+    height: 60px;
+    width: auto; 
+}
+
+/*là c'est pour rendre lien jolie*/
+.link a {
+    text-decoration: none; 
+    color: #EDEBD7; 
+}
+
+/*hover des liens*/
+.link a:hover {
+    color: #A39594; 
+}
+
+/*ENSUITE*/
+
+/*ici on met en colone on aligne au centre de la page*/
+main {
+    padding: 15px;
+    margin: 15px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+/*là on lui indique*/
+.art {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/*ici images*/
+.art img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/*et la pour que l'image soit inversé*/
+.fleur {
+    flex-direction: row-reverse;
+}

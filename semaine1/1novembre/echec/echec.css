@@ -1,0 +1,23 @@
+.chessboard {
+    border: 1px solid #000;
+    width: 800px;
+    height: 800px;
+}
+.chessboard div{
+    height: 100px;
+}
+.chessboard span{
+    display: inline-block;
+    background: #000;
+    height: 100px;
+    width: 100px;
+}
+.chessboard div:nth-of-type(odd) span:nth-of-type(odd) {
+    background-color: #FFF;
+}
+.chessboard div:nth-of-type(even) span:nth-of-type(even) {
+    background-color: #FFF;
+}
+.chessboard span:hover{
+    background: #777 !important;
+}

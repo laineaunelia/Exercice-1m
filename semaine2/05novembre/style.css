@@ -1,0 +1,34 @@
+/*barre du haut*/
+
+.nav1 ol {
+    display: flex;
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    align-items: center; 
+    justify-content: flex-end; 
+}
+
+.nav1 li {
+    display: flex;
+    align-items: center; 
+    margin-left: 15px; 
+}
+
+.nav1 .espace {
+    flex-grow: 1; 
+}
+
+.nav1 img {
+    max-width: 30px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+h6, p {
+    margin: 0; 
+    padding: 0;
+}
+
+/*Barre de côté*/
+

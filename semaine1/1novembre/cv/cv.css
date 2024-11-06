@@ -1,0 +1,57 @@
+/* tête */
+.header{
+    background-color: CornflowerBlue;
+    text-align: center;
+}
+.header img{
+    box-shadow: 5px 5px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.about-me{
+    font-size: 18px;
+    opacity: 0.5;
+    border: 3px solid black;
+}
+
+
+/*corps*/
+body{
+    font-family: Georgia;
+    background-image: url(images/3225581.jpg);
+    color: aliceblue;
+}
+h2{
+    font-style: italic;
+}
+h1{
+    color: Azure;
+}
+h6{
+    text-align: center;
+}
+
+.title{
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+ul:first-of-type{ 
+    color:rgb(32, 184, 184) ;
+}
+ul:last-of-type{
+    color: #689bca ;
+}
+.twitter{
+    color: #1d9bf0;
+}
+.linkedin{
+    color: #0a66c2;
+}
+.github{
+    color: #24292f;
+}
+.twitter, .linkedin, .github{
+    text-decoration: none;
+}
+
