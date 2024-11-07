@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+.koin {
+    color: #d7b9fd;
+}
+.navbar {
+    background-color: #190422;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {color: #fff;}
+.icone {
+    fill: white;
+    cursor: pointer;
+}
+.navbar input, .nav-menu {
+    display: none;
+}
+[id^=btn]:checked + ul{
+    display: block;
+}
+.nav-menu {
+    list-style-type: none;
+    color: #fff;
+    background-color: #190422;
+    position: absolute;
+    top:70px;
+    left: 0;
+    right: 0;
+}
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+.nav-menu a:hover{
+    font-weight: bold;
+}
+.start {
+    background-color: #d7b9fd;
+    border: 1px solid #d7b9fd;
+    border-radius: 5%;
+    text-decoration: none;
+}
+header {
+    background-color: #190422;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .icone{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 70px;
+    }
+}
+
