@@ -64,10 +64,11 @@ header {
     color: #fff;
 }
 
-main, article {
-    display: inline-block;
+main {
+    display: block;
 }
 
+/*
 @media (min-width: 768px) and (min-width: 1024px) {
     .icone{
         display: none;
@@ -80,10 +81,11 @@ main, article {
         display: inline-block;
         margin-left: 70px;
     }
+
 }
 
 @media (min-width: 1024px) {
-    main {
-    }
-}
 
+
+}
+*/
