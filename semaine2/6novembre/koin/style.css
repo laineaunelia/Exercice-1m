@@ -1,11 +1,14 @@
 body {
+    padding: 0;
     margin: 0;
+    background-color: #190422;
 }
+
 .koin {
     color: #d7b9fd;
 }
+
 .navbar {
-    background-color: #190422;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -30,9 +33,37 @@ body {
     display: block;
 }
 
+.white {
+    color: #fff;
+}
+
+.depasse {
+    background-color: #FFFFFF;
+    margin: auto 0;
+}
+
+.smiley {
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.smiley img {
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    background-color: #EEF6FF;
+}
+
+.benefit {
+    background-color: #FFFFFF;
+}
+
 .nav-menu {
     list-style-type: none;
-    color: #fff;
+    color: #FFF;
     background-color: #190422;
     position: absolute;
     top:70px;
@@ -64,11 +95,79 @@ header {
     color: #fff;
 }
 
-main {
-    display: block;
+img {
+    max-width: 100%;
 }
 
-/*
+p, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+.slider-container {
+    background-color: #fff;
+    max-width: 350px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #EEF6FF;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.money {
+    background-color: #190422;
+}
+
+footer {
+    background-color: #190422;
+}
+
+.ABC {
+
+    gap: 15px;
+    margin: 0;
+}
+
 @media (min-width: 768px) and (min-width: 1024px) {
     .icone{
         display: none;
@@ -88,4 +187,4 @@ main {
 
 
 }
-*/
+
