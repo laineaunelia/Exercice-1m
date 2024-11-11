@@ -1,34 +1,97 @@
-/*barre du haut*/
 
-.nav1 ol {
-    display: flex;
-    list-style: none;
-    padding: 0; 
-    margin: 0; 
-    align-items: center; 
-    justify-content: flex-end; 
-}
-
-.nav1 li {
-    display: flex;
-    align-items: center; 
-    margin-left: 15px; 
-}
-
-.nav1 .espace {
-    flex-grow: 1; 
-}
-
-.nav1 img {
-    max-width: 30px; 
-    height: auto;
-    margin-right: 10px; 
-}
-
-h6, p {
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
 }
 
-/*Barre de côté*/
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    margin: 0;
+    overflow: hidden;
+}
 
+nav {
+    background: white;
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+nav header {
+    background: white;
+    padding: 0.5rem;
+}
+
+
+nav ul {
+    background: white;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+nav li {
+    background: white;
+    height: 6rem;
+    padding: 1rem;
+}
+
+
+nav li:not(:last-child) {
+    margin-bottom: 0.2rem;
+}
+
+main {
+    flex: 3;
+    height: 100vh;
+    background-color: blue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main header {
+    display: flex;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.espace {
+    flex-grow: 1;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main ul li {
+    background-color: lightseagreen;
+    padding: 1rem;
+    max-width: 80%;
+    width: fit-content;
+    margin: 0.5rem;
+}
+
+main ul li.contact-message {
+    background-color: lightblue;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+main footer {
+    background-color: white;
+    width: 80%;
+    margin: 0.1rem auto;
+    padding: 1rem;
+    border: solid 0.1rem black;
+}
