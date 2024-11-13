@@ -1,0 +1,209 @@
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000; 
+    --btn-color:#f26666;
+    --banane-fraise-color:#fdeed7;
+    --peche-color:#ffcfcf;
+    --choco-color:#edd9cf;
+}
+
+header {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav label {
+    fill: var(--black-color);
+    cursor: pointer;
+}
+
+nav input, .nav-menu {
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.nav-menu {
+    list-style-type: none;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    position: absolute;
+    top:70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a {
+    color: var(--black-color);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+nav li:last-child {
+    background-color: #f26666;
+}
+
+/*@media (min-width: 768px) {
+    nav label{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 70px;
+    }
+}*/
+
+.Yogurt-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.head-peach {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.head-peach h2, .head-peach h3 {
+    color:var(--black-color);
+}
+
+.head-peach h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.head-peach h3 {
+    font-weight:lighter;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--black-color);
+}
+
+.head-peach p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+.buy-now {
+    background-color: var(--btn-color);
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now a {
+    color: white;
+    text-decoration: none;
+}
+
+.buy-now:hover {
+    background-color: #000;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.head-img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+.shop-yogurt {
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.shop-yogurt h2 {
+    font-size: 2rem;
+    color: var(--five-color);
+    margin-bottom: 20px;
+}
+
+.products-yogurt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    text-shadow: var(--secondary-color);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--five-color);
+}
+
+.product p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--five-color);
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: var(--fourth-color);
+}
